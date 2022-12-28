@@ -1,0 +1,93 @@
+.navbar {
+    background-color: #1DA1F2;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.navbarHeading {
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18pt;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.navbarHeading:hover {
+    opacity: .9;
+    transform: scale(1.1)
+}
+
+.navbarPages {
+    padding: 3rem;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+    flex-grow: 1;
+    gap: 25pt;
+    display: flex;
+    opacity: 1;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.navbarPage > div {
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.navbarPages:hover > div {
+    opacity: .3;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+
+}
+
+.navbarPages:hover > div:hover{
+    opacity: 1;
+    color: #ffcc34;
+    transform: scale(1.1)
+}
+
+
+
+.navbarAuth {
+    padding : 3rem;
+    color: white;
+    display: flex;
+    gap: 25pt;
+    cursor: pointer;
+}
+
+.navbarAuth:hover > div:hover{
+    color:#ffcc34;
+    transform: scale(1.1)
+
+}
+
+.signupButton {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .signupButton:hover {
+    background-color: #ffcc34;
+  }
+
+  .login {
+      padding: 8px 0px;
+  }
