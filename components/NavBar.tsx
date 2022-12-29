@@ -17,10 +17,10 @@ const NavBar = () => {
                             src="/pen.svg"
                             alt="Yourpen Logo"
                             width={20}
-                            height={37}
+                            height={60}
                             priority
                         />
-                        <h1 style={{ fontFamily: 'cursive', fontWeight: '1400' }}>Yourpen.io</h1>
+                        <h1 style={{ fontFamily: 'cursive', fontWeight: '1400' }}>YourPen.io</h1>
                     </a>
                 </div>
             </div>
@@ -30,8 +30,8 @@ const NavBar = () => {
                 <div>Pricing</div>
             </div>
             <div className={styles.navbarAuth}>
-                <div className={styles.login}>Login</div>
-                <div><button className={styles.signupButton}>Signup</button></div>
+                <div className={styles.login}>Log in</div>
+                <div><button className={styles.signupButton}>Sign up</button></div>
             </div>
 
         </nav >

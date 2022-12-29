@@ -1,8 +1,11 @@
 .navbar {
-    background-color: #1DA1F2;
+    background-color: white;
     display: flex;
     width: 100%;
     align-items: center;
+    height: 60pt;
+    position: fixed;
+    top: 0;
 }
 
 .navbarHeading {
@@ -10,7 +13,7 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #263159;
     font-size: 18pt;
     transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -24,8 +27,9 @@
 
 .navbarPages {
     padding: 3rem;
-    color: white;
+    color: #263159;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     cursor: pointer;
     flex-grow: 1;
@@ -61,7 +65,7 @@
 
 .navbarAuth {
     padding : 3rem;
-    color: white;
+    color: #263159;
     display: flex;
     gap: 25pt;
     cursor: pointer;
@@ -69,14 +73,17 @@
 
 .navbarAuth:hover > div:hover{
     color:#ffcc34;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 
 }
 
 .signupButton {
-    background-color: #ddd;
+    background-color: #251749;
     border: none;
-    color: black;
+    color: #FFFBEB;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -86,8 +93,13 @@
 
   .signupButton:hover {
     background-color: #ffcc34;
+    color: #263159;
   }
 
   .login {
       padding: 8px 0px;
+  }
+
+  .logo {
+      margin-left: 25pt;
   }
