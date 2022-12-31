@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
     height: 100vh;
-    width: 500pt;
-    margin-left: clamp(4rem, 20vw, 48rem);
+    flex-basis: 50%;
 }
 
 .heading {
     font-size: 64pt;
     font-weight: 900;
     color: #263159;
+    margin-left: clamp(4rem, 20vw, 48rem);
 }

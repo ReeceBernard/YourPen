@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Image from 'next/image';
+import GenerateContentForm from './GenerateContentForm';
 import styles from '../styles/Hero.module.css';
 
 const Hero = () => {
@@ -8,11 +8,8 @@ const Hero = () => {
         <div style={{ display: 'flex', height: '100vmax', backgroundColor: 'white' }}>
             <div className={styles.headingContainer}>
                 <div className={styles.heading}>Generate Authentic Content</div>
-                <div>
-                    <GenerateContentForm />
-                </div>
             </div>
-
+            <GenerateContentForm />
         </div>
     );
 }

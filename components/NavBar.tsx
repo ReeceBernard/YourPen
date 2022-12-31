@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import styles from '../styles/NavBar.module.css';
+import { useSession, signIn, signOut } from 'next-auth/react';
 
 const NavBar = () => {
+
+    const { data: session } = useSession();
 
     const handleNavToggle = () => {
         console.log('hi')
@@ -20,7 +23,7 @@ const NavBar = () => {
                             height={60}
                             priority
                         />
-                        <h1 style={{ fontFamily: 'cursive', fontWeight: '1400' }}>YourPen.io</h1>
+                        <h1 style={{ fontFamily: 'cursive', fontWeight: '1400' }}>ContentCoverter <span style={{ fontFamily: 'Times', color: 'red', fontWeight: 'bold' }}>BETA</span></h1>
                     </a>
                 </div>
             </div>
@@ -30,8 +33,10 @@ const NavBar = () => {
                 <div>Pricing</div>
             </div>
             <div className={styles.navbarAuth}>
-                <div className={styles.login}>Log in</div>
-                <div><button className={styles.signupButton}>Sign up</button></div>
+                {session ? <><div className={styles.login}>You are signed in</div>
+                    <div><button className={styles.signupButton} onClick={() => signOut()}>Sign out</button></div></> : <>
+                    <div className={styles.login}>Log in</div>
+                    <div><button className={styles.signupButton} onClick={() => signIn('google')}>Sign up</button></div></>}
             </div>
 
         </nav >
